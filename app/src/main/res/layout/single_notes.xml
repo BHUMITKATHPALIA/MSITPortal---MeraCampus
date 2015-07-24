@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/abc">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDescription"
+        android:layout_alignParentTop="true"
+        android:text="course_stream_sem_subject"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLink"
+        android:layout_below="@+id/tvDescription"
+        android:text="Link"
+        android:layout_alignRight="@+id/tvDescription"
+        android:layout_alignEnd="@+id/tvDescription"
+        android:textStyle="italic"
+        android:textColor="#008888"
+        android:textSize="20dp" />
+
+</RelativeLayout>

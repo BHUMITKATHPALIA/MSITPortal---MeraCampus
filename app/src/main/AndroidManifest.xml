@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="work.anmol.com.meracampus" >
+
+    <application
+        android:logo="@drawable/logo"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="MeraCampus"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".BootScreen"
+            android:label="Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".LoginActivity"
+            android:label="Login Details" >
+            <intent-filter>
+                <action android:name="com.work.anmol.meracampus" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".RegisterationActivity"
+            android:label="Register Here" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ChatActivity"
+            android:label="Chats"
+            android:parentActivityName=".LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="work.anmol.com.meracampus.LoginActivity" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ChatViewActivity"
+            android:label="About MSIT"
+            android:parentActivityName=".ChatActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="work.anmol.com.meracampus.ChatActivity" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".AboutUsActivity"
+            android:label="About MSIT"
+            android:parentActivityName=".ChatActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="work.anmol.com.meracampus.ChatActivity" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".TeacherReviewActivity"
+            android:label="Teacher Details" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".TeacherViewActivity"
+            android:label="Teacher Reviews" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".AddNotesActivity"
+            android:label="Add Notes Here" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ViewNotesActivity"
+            android:label="Education forum" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".NotesActivity"
+            android:label="Education and Notes" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".NotesViewActivtiy"
+            android:label="View Notes" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".NewsAndEventsActivity"
+            android:label="News and Events" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".SocietiesActivity"
+            android:label="Societies and Amnesties" >
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".AssesmentActivity"
+            android:label="Self Assesment Tools" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Login"
+    android:id="@+id/layout"
+    android:textAlignment="gravity"
+
+    android:background="@drawable/abc">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUserName"
+        android:hint="Username"
+        android:singleLine="true"
+        android:textSize="30dp"
+        android:textColor="#ff0d1010"
+        android:textColorHint="#750d1010"
+
+
+        android:layout_below="@+id/tvLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:singleLine="true"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:textSize="30dp"
+        android:textColorHint="#750d1010"
+        android:textColor="#ff0e0e0e"
+        android:layout_below="@+id/etUserName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivRegister"
+        android:scaleType="fitXY"
+        android:src="@drawable/register"
+        android:layout_below="@+id/ivLogin"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ivFb"
+        android:src="@drawable/face"
+        android:layout_below="@+id/ivRegister"
+        android:layout_alignRight="@+id/ivRegister"
+        android:layout_alignEnd="@+id/ivRegister"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/ivLogin"
+        android:src="@drawable/login"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/ivFb"
+        android:layout_alignEnd="@+id/ivFb"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ivGoogle"
+        android:src="@drawable/google"
+
+        android:layout_alignTop="@+id/ivFb"
+        android:layout_alignLeft="@+id/ivRegister"
+        android:layout_alignStart="@+id/ivRegister" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don&apos;t want to Sign in? Click here"
+        android:id="@+id/tvSkip"
+        android:textColor="#f9130a3e"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/tvLogin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="50dp"
+        android:textColor="#f9130a3e"/>
+   <!-- <TextView android:layout_weight="1"
+        android:text="new user? register here"
+        android:id="@+id/tvRegisterationShooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+
+
+</RelativeLayout>

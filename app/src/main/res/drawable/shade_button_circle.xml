@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:innerRadiusRatio="2"
+    android:innerRadius="3dp"
+    android:thicknessRatio="2">
+    <size android:width="3dp"
+        android:height="5dp" />
+    <solid android:color="#ffe01115" />
+    <stroke android:color="@color/switch_thumb_material_light"
+        android:width="0.2dp"/>
+</shape>
